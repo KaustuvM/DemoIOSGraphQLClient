@@ -1,0 +1,26 @@
+query GetFruits {
+  fruits {
+    id
+    title
+    headline
+    image
+    gradientColors
+    description
+    sectionHeaders
+    sectionContents
+    nutrition
+  }
+}
+query GetFruitById($fruitId: ID!) {
+  fruit(id: $fruitId) {
+    id
+    title
+    headline
+    image
+    gradientColors
+    description
+    sectionHeaders
+    sectionContents
+    nutrition
+  }
+}
