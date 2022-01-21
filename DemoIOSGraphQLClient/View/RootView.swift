@@ -20,7 +20,7 @@ struct RootView: View {
                 FruitDetailView()
             }
         case .none:
-            ActivityIndicatorStyleFive(color_1: .blue, color_2: .red)
+            ActivityIndicatorStyleSix(color_1: .gray.opacity(0.9), color_2: .gray.opacity(0.5))
         case .failure:
             VStack {
                 Text("Loading failed!")
